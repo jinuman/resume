@@ -1,0 +1,10 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+@font-face {
+    font-family: 'musictime';
+    src: url("musictime.ttf");
+}
