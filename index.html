@@ -131,13 +131,15 @@
                 유지보수와 확장성이 곧 성능이라는 어느 개발자분의 발표를 들은 적이 있었는데, 그 이후 Architecture, Design Pattern 에 대해서도 많은 고민을 하고 있습니다. 현재는
                 함수형 패러다임과 RxSwift 필요성을 느끼고 공부 중입니다.</p>
             <p>&nbsp 개발 도중 다양한 객체 간 커뮤니케이션 패턴을 숙지하고 있고, retain cycle 로 인한 memory leak 을 항상 조심하며 개발하고 있습니다. Apple 프레임워크만을 활용하여
-                개발하려고 노력해보고 힘들면 오픈소스들을 찾는 편입니다. SnapKit, Alamofire, Kingfisher, Nimble(test) 등의 3rd party library 를 사용해본
-                경험이 있습니다. Auto-layout 은 두 방식 다 가능합니다만, 스토리보드를 이용하는 방식보다는 코드를 작성하는 방식을 선호합니다. 영속성을 위해 Firebase, Realm,
-                UserDefaults 프로젝트에서 사용해본 경험이 있습니다. 또한, Swift 4 이상부터 간편해진 데이터 파싱 방법으로 Codable 사용 경험이 있습니다. LLDB 를 능숙하게 다룰 수 있습니다.
-                MVVM / DI 를 적용해 유지보수와 테스트가 편하도록 개발하고 있습니다. 회사 프로젝트 수준의 TDD 개발 경험은 없지만, 방법을 배웠고 공부한 적이 있습니다.</p>
-            <p>&nbsp 그 외엔 Git 을 이해하고 협업할 수 있습니다. nodejs 로 back-end 서버를 만들어서 프로젝트를 해본 경험이 있습니다. Deep-learning 오픈소스 모델을
-                API-server 에 적용 시켜본 경험이 있습니다. 다년 간 유학생활로 영어권 외국인들과 자유롭게 소통을 할 수 있고, 영어 문서를 읽는 데 거부감이 없습니다. 사교적이고 유연한 성격이며, 특유의
-                유머를 보유하고 있습니다.</p>
+                개발하려고 노력해보고 힘들면 오픈소스를 찾는 편이었습니다만, 최근엔 FRP 를 공부하면서 다양한 오픈소스들을 경험해보고 있습니다.
+                아직 미흡하지만, Reactive extension (RxSwift, RxCocoa, RxDataSources, ReactorKit 등등) 을 사용해서 개발한 경험이 있습니다.
+                Auto-layout 은 두 방식 다 가능합니다만, 스토리보드를 이용하는 방식보다는 코드를 작성하는 방식을 선호합니다. 영속성을 위해 Firebase, Realm,
+                UserDefaults 프로젝트에서 사용해본 경험이 있습니다. 또한, Swift 4 이상부터 간편해진 데이터 파싱 방법으로 Codable 사용 경험이 있습니다. LLDB 를 다룰 수 있습니다.
+                Architecture 패턴으로는 MVVM / DI 방식을 공부하였고, 프로젝트에 적용하였습니다. 회사 프로젝트 수준의 TDD 개발 경험은 없지만, 방법을 배웠고 공부한 적이 있습니다.
+                최근엔 ReactorKit 에 관심이 많아져서 적용해서 개발하려고 노력하고 있습니다. </p>
+            <p>&nbsp 그 외엔 Git 을 이해하고 협업할 수 있습니다. nodejs 로 API-server 를 만들어서 프로젝트를 해본 경험이 있습니다. Deep-learning 오픈소스 모델을
+                API-server 에 적용 시켜본 경험이 있습니다. 또한, 다년 간 유학생활로 영어권 외국인들과 자유롭게 소통을 할 수 있고, 영어 문서를 읽는 데 거부감이 없습니다.
+                사교적이고 유연한 성격이며, 특유의 유머를 보유하고 있습니다.</p>
         </div>
     </div>
     <!-- Introduce End -->
@@ -352,6 +354,39 @@
 
             <div class="row">
                 <div class="col">
+
+                    <div class="row">
+                        <div class="col-md-3 col-12 text-md-right">
+                            <h4 class="gray">Github User Search</h4>
+                        </div>
+                        <div class="col-md-9 col-12">
+                            <h4>Github 유저 검색 앱</h4>
+                            <i class="gray">iOS - RxSwift</i>
+                            <ul class="pt-3">
+                                <li>
+                                    <strong>개요</strong>
+                                    <ul>
+                                        <li>Github API 를 이용한 유저 검색 앱</li>
+                                        <li>RxSwift 로 개발</li>
+                                        <li>ReactorKit 구조를 따라 개발</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>개발 환경</strong>
+                                    <ul>
+                                        <li>iOS 12</li>
+                                        <li>Swift 5</li>
+                                        <li>Xcode 10</li>
+                                        <li>RxSwift</li>
+                                        <li>ReactorKit</li>
+                                        <li>Firebase 5</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr/>
+
                     <div class="row">
                         <div class="col-md-3 col-12 text-md-right">
                             <h4 class="gray">Realtime Chatting Messenger</h4>
@@ -364,6 +399,8 @@
                                     <strong>개요</strong>
                                     <ul>
                                         <li>Firebase를 이용한 실시간 채팅 구현</li>
+                                        <li>로그인, 회원가입, 사용자간 채팅 가능</li>
+                                        <li>Image, Video 전송 가능</li>
                                         <li>추후에 아이디어가 생기면 확장 예정</li>
                                     </ul>
                                 </li>
@@ -371,9 +408,8 @@
                                     <strong>개발 환경</strong>
                                     <ul>
                                         <li>iOS 12</li>
-                                        <li>Swift 4.2</li>
+                                        <li>Swift 5</li>
                                         <li>Xcode 10</li>
-                                        <li>CocoaPods</li>
                                         <li>Firebase 5</li>
                                     </ul>
                                 </li>
@@ -387,13 +423,13 @@
                             <h4 class="gray">Fully Instagram</h4>
                         </div>
                         <div class="col-md-9 col-12">
-                            <h4>나의 인스타그램</h4>
+                            <h4>My 인스타그램</h4>
                             <i class="gray">iOS - Swift</i>
                             <ul class="pt-3">
                                 <li>
                                     <strong>개요</strong>
                                     <ul>
-                                        <li>인스타그램의 모든 기능과 UI/UX를 따라해보는 것을 목표</li>
+                                        <li>인스타그램의 모든 기능과 UI/UX를 구현해보는 것을 목표</li>
                                         <li>Firebase 이용해 로그인 및 데이터 저장</li>
                                     </ul>
                                 </li>
@@ -401,9 +437,8 @@
                                     <strong>개발 환경</strong>
                                     <ul>
                                         <li>iOS 12</li>
-                                        <li>Swift 4.2</li>
+                                        <li>Swift 5</li>
                                         <li>Xcode 10</li>
-                                        <li>CocoaPods</li>
                                         <li>Firebase 5</li>
                                     </ul>
                                 </li>
@@ -427,7 +462,7 @@
                                         <li>UserDefaults를 이용해서 설정 변경</li>
                                         <li>Dependency Injection을 통한 데이터 전달</li>
                                         <li>MVVM Pattern 적용</li>
-                                        <li>Realm을 이용한 CRUD</li>
+                                        <li>Realm 데이터베이스 적용</li>
                                     </ul>
                                 </li>
                                 <li>
@@ -449,15 +484,13 @@
                             <h4 class="gray">Flickr Photo Searcher</h4>
                         </div>
                         <div class="col-md-9 col-12">
-                            <h4>Flickr 사진 검색기</h4>
+                            <h4>Flickr 사진 검색 앱</h4>
                             <i class="gray">iOS - Swift</i>
                             <ul class="pt-3">
                                 <li>
                                     <strong>개요</strong>
                                     <ul>
-                                        <li>Flickr api를 이용해서 사진 검색기 구현</li>
-                                        <li>2018 윈터코딩 과제로 실시한 것 리팩토링</li>
-                                        <li>스토리보드 없이 코드로 작성</li>
+                                        <li>Flickr API 이용한 사진 검색 앱</li>
                                         <li>MVVM 패턴 적용</li>
                                     </ul>
                                 </li>
@@ -467,9 +500,6 @@
                                         <li>Flickr API</li>
                                         <li>Swift 5</li>
                                         <li>Xcode 10</li>
-                                        <li>CocoaPods</li>
-                                        <li>Alamofire</li>
-                                        <li>Kingfisher</li>
                                     </ul>
                                 </li>
                             </ul>
