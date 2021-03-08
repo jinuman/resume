@@ -60,7 +60,6 @@
                     <h1 class="blue">김 진 우</h1>
                 </div>
             </div>
-            <br>
             <div class="row">
                 <div class="col pt-3">
                     <div class="row pb-2">
@@ -82,11 +81,20 @@
                     </div>
                     <div class="row pb-2">
                         <div class="col-1 text-right">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-auto">
+                            <a href="https://www.linkedin.com/in/jinuman" target="_blank"
+                               style="color:blue; font-weight: bold">@LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="row pb-2">
+                        <div class="col-1 text-right">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                         </div>
                         <div class="col-auto">
                             <a href="https://www.instagram.com/jinuman" target="_blank"
-                               style="color:pink; font-weight:bold">#Instagram</a>
+                               style="color:pink; font-weight:bold">@Instagram</a>
                         </div>
                     </div>
                     <div class="row pb-4">
@@ -102,7 +110,7 @@
                         <div class="col">
                             <div class="alert alert-secondary" role="alert">
                                 <i class="fa fa-bell-o" aria-hidden="true"></i>&nbsp;
-                                연락은 <strong>이메일이나 휴대폰</strong>으로 부탁드립니다.
+                                연락은 <strong>이메일</strong>로 부탁드립니다.
                             </div>
                         </div>
                     </div>
@@ -571,30 +579,38 @@
 
                     <div class="row">
                         <div class="col-md-3 col-12 text-md-right">
-                            <h4 class="gray">Github User Search</h4>
+                            <h4 class="gray">Photo Searcher</h4>
                         </div>
                         <div class="col-md-9 col-12">
-                            <h4>Github 유저 검색 앱</h4>
-                            <i class="gray">iOS - RxSwift</i>
+                            <h4>Public API를 활용한 사진 검색 앱</h4>
+                            <i class="gray">iOS - Swift, Tuist</i>
                             <ul class="pt-3">
                                 <li>
                                     <strong>개요</strong>
                                     <ul>
-                                        <li>Github API 를 이용한 유저 검색 앱</li>
-                                        <li>RxSwift 로 개발</li>
-                                        <li>ReactorKit 구조를 따라 개발</li>
-                                        <li>Pagination 구현</li>
+                                        <li>Flickr API를 이용해서 간단한 사진 검색 기능 구현(추후 API 추가 예정)</li>
+                                        <li>아이폰 사진 앱에 사진 저장하기 기능 구현</li>
+                                        <li>Tuist를 이용해서 Xcode project 생성 자동화 구현</li>
+                                        <li>UI, Reactive, Foundation, Networking 등 각각의 역할을 모듈화해서 개발 진행</li>
+                                        <li>사용하는 3rd party들을 캐싱 처리</li>
+                                        <li>객체간 의존성을 CompositionRoot 한 곳에서 관리하도록 구현</li>
                                     </ul>
                                 </li>
                                 <li>
                                     <strong>개발 환경</strong>
                                     <ul>
-                                        <li>iOS 12</li>
-                                        <li>Swift 5</li>
-                                        <li>Xcode 11</li>
+                                        <li>Flickr API</li>
+                                        <li>Tuist</li>
+                                        <li>cocoapods-binary-cache</li>
+                                        <li>Bundler</li>
                                         <li>RxSwift</li>
                                         <li>RxDataSources</li>
                                         <li>ReactorKit</li>
+                                        <li>Pure+Swinject</li>
+                                        <li>SnapKit</li>
+                                        <li>Moya</li>
+                                        <li>Quick</li>
+                                        <li>Nimble</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -638,7 +654,7 @@
                             <h4 class="gray">Fully Instagram</h4>
                         </div>
                         <div class="col-md-9 col-12">
-                            <h4>My 인스타그램</h4>
+                            <h4>Instagram Clone</h4>
                             <i class="gray">iOS - Swift</i>
                             <ul class="pt-3">
                                 <li>
@@ -688,34 +704,6 @@
                                         <li>Swift 5</li>
                                         <li>Xcode 10</li>
                                         <li>CocoaPods</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr/>
-
-                    <div class="row">
-                        <div class="col-md-3 col-12 text-md-right">
-                            <h4 class="gray">Flickr Photo Searcher</h4>
-                        </div>
-                        <div class="col-md-9 col-12">
-                            <h4>Flickr 사진 검색 앱</h4>
-                            <i class="gray">iOS - Swift</i>
-                            <ul class="pt-3">
-                                <li>
-                                    <strong>개요</strong>
-                                    <ul>
-                                        <li>Flickr API 이용한 사진 검색 앱</li>
-                                        <li>MVVM 패턴 적용</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>개발 환경</strong>
-                                    <ul>
-                                        <li>Flickr API</li>
-                                        <li>Swift 5</li>
-                                        <li>Xcode 10</li>
                                     </ul>
                                 </li>
                             </ul>
